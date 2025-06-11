@@ -65,7 +65,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://github.com/jujhars13/demo-java18-svc</url>
+      <url>https://maven.pkg.github.com/jujhars13/demo-java18-svc</url>
     </repository>
   </distributionManagement>
 </project>
