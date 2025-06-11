@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository }}/java-18-test:latest .
+        run: docker build -t ghcr.io/${{ github.repository }}/demo-java18-svc:latest .
 
       - name: Push Docker image to GitHub Container Registry
-        run: docker push ghcr.io/${{ github.repository }}/java-18-test:latest
+        run: docker push ghcr.io/${{ github.repository }}/demo-java18-svc:latest

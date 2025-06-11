@@ -5,18 +5,29 @@ A simple Java service 18 that retrieves data from our API to test TLS cert issue
 ## Project Structure
 
 ```bash
-java-service-project
+java-demo-svc
 ├── src
 │   └── main
 │       ├── java
-│       │   └── com
-│       │       └── example
-│       │           └── App.java
+│       │   └── goodstack
+│       │       └── App.java
 │       └── resources
 ├── Dockerfile
 ├── pom.xml
 └── README.md
 ```
+
+## Configuring
+
+The `API_URL` environment variable can be overridden to a URL of your choice.
+
+eg
+
+```bash
+docker run -it -e API_URL=https://jujhar.com/ ghcr.io/jujhars13/demo-java18-svc/demo-java18-svc:latest
+```
+
+![alt text](image.png)
 
 ## Prerequisites
 
