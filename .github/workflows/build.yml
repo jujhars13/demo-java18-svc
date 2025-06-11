@@ -30,6 +30,7 @@ jobs:
           path: target/java-goodstack-project-1.0.jar
 
       - name: Publish JAR to GitHub Packages
-        run: mvn deploy -DskipTests --settings .github/maven-settings.xml
+        # run: mvn deploy -DskipTests --settings .github/maven-settings.xml
+        run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
