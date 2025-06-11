@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
           java-version: '18'
 
-      - name: Build with Maven
+      - name: Build with maven
         run: mvn clean package -DskipTests
 
       - name: Upload JAR artifact
