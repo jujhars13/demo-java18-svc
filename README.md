@@ -1,6 +1,6 @@
 # Test Java Service Project
 
-This project is a simple Java service that retrieves data from our API to test TLS cert issues from certain legacy environments
+A simple Java service 18 that retrieves data from our API to test TLS cert issues from certain legacy environments
 
 ## Project Structure
 
