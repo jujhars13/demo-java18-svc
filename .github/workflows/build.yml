@@ -26,8 +26,8 @@ jobs:
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
-          name: java-goodstack-project-jar
-          path: target/java-goodstack-project-1.0.jar
+          name: java-goodstack-svc-jar
+          path: target/java-goodstack-svc-1.0.jar
 
       - name: Publish JAR to GitHub Packages
         # run: mvn deploy -DskipTests --settings .github/maven-settings.xml

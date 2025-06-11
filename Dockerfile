@@ -13,7 +13,7 @@ RUN ls -l /build/target
 #FROM openjdk:1.8.0_442-jdk
 FROM openjdk:8-jdk-alpine3.7
 
-COPY --from=build /build/target/java-goodstack-project-1.0.jar /app.jar
+COPY --from=build /build/target/java-goodstack-svc-1.0.jar /app.jar
 
 ENV API_URL=https://api.poweredbypercent.com/v1/_health
 ENTRYPOINT ["java", "-jar", "/app.jar"]
